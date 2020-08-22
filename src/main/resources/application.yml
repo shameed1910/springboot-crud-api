@@ -1,0 +1,19 @@
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: admin@123
+    url: jdbc:mysql://localhost/springbootdb?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
